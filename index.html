@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Egor Makarov">
-    <meta name="copyright" content="www.EgorMakarov.ru">
-    <link rel="stylesheet" href="css/style.css">
-   
-    <title>Игра на js «Поймай фигуру» по мотивам уроков webformyself.com </title>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Egor Makarov">
+  <meta name="copyright" content="www.EgorMakarov.ru">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Игра на js «Поймай фигуру» по мотивам уроков webformyself.com </title>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="app">
-      <div class="app-header">
-        <h1 class="app-header__title">Время игры: <span class="time">5.0</span></h1>
-      </div> 
-      <div class="app-content">
-        <div class="game-box">
-          <button class="btn">Старт</button>
-        </div>
-      </div> 
-      <div class="app-footer">
-        <label for="game-time">Время игры, сек</label>
-        <input type="text" id="game-time" class="game-time input" >
-        
-        <label for="square">Квадрат</label>
-        <input type="radio" id="square" class="square input" >
-        
-        <label for="circle">Круг</label>
-        <input type="radio" id="circle" class="circle input" >        
-        
-        <label for="rectangle">Прямоугольник</label>
-        <input type="radio" id="rectangle" class="rectangle input" >                
-      </div> 
-      
+</head>
+
+<body>
+  <div class="app">
+    <div class="app-header">
+      <h1 class="app-header__title">Время игры: <span class="time">5.0</span></h1>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="app-content">
+      <div class="game-box">
+        <button class="btn">Старт</button>
+      </div>
+    </div>
+    <div class="app-footer">
+      <div class="footer-row">
+        <label for="game-time">Время игры, сек</label>
+        <div class="change-time">
+          <button class="minus">-</button>               
+            <input type="text" id="game-time" class="game-time input" value="5" readonly>
+          <button class="plus">+</button>            
+        </div>          
+      </div>
+      
+      <div class="radio-row">
+        <input type="radio" name="radio" id="square" class="radioinput" checked value="square">
+        <label for="square">Квадрат</label>
+
+        <input type="radio" name="radio" id="circle" class="radioinput" value="circle">
+        <label for="circle">Круг</label>
+
+        <input type="radio" name="radio" id="rectangle" class="radioinputput" value="rectangle">
+        <label for="rectangle">Прямоугольник</label>
+      </div>        
+
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
