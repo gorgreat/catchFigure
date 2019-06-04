@@ -19,7 +19,30 @@
     <![endif]-->
   </head>
   <body>
-    
+    <div class="app">
+      <div class="app-header">
+        <h1 class="app-header__title">Время игры: <span class="time">5.0</span></h1>
+      </div> 
+      <div class="app-content">
+        <div class="game-box">
+          <button class="btn">Старт</button>
+        </div>
+      </div> 
+      <div class="app-footer">
+        <label for="game-time">Время игры, сек</label>
+        <input type="text" id="game-time" class="game-time input" >
+        
+        <label for="square">Квадрат</label>
+        <input type="radio" id="square" class="square input" >
+        
+        <label for="circle">Круг</label>
+        <input type="radio" id="circle" class="circle input" >        
+        
+        <label for="rectangle">Прямоугольник</label>
+        <input type="radio" id="rectangle" class="rectangle input" >                
+      </div> 
+      
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
